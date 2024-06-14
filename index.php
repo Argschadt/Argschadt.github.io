@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
+    <div class="container">
+        <h2>Entre em contato conosco:</h2>
+        
+        <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+            <div class="form-group">
+                <label for="name">Nome Completo:</label>
+                <input type="text" name="name" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" name="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensagem:</label>
+                <textarea name="message" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+</body>
 
         <?php
         // Check if form is submitted
@@ -51,7 +71,7 @@
         }
         ?>
 
-        <div class="container">
+        <!-- <div class="container">
             <h2>Entre em contato conosco:</h2>
             
             <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -69,7 +89,7 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-        </div>
+        </div> -->
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
